@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package protos;
+
+message SendRequest {
+    string email = 1;
+    string message = 2;
+}
+
+message SendResponse {
+    int64 id = 1;
+}
+
+message StatusRequest{
+    int64 id = 1;
+}
+
+message StatusResponse{
+    string Status = 1;
+}
+
+service Sender {
+  rpc Send(SendRequest) returns (SendResponse) {}
+  rpc Status(StatusRequest) returns (StatusResponse) {}
+}

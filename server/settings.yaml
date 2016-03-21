@@ -1,0 +1,9 @@
+port: ":50051"
+
+mailgun_key: "key-your_mailgun_key"
+mailgun_pub_key: "pubkey-your_public_mailgun_key"
+mailgun_domain: "your_fomain"
+mailgun_sender: "sender_address"
+
+type_db: "sqlite3"
+db_connect: "test.db" #for Postgresql example: "user=gorm dbname=gorm sslmode=disable"
